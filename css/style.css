@@ -24,7 +24,8 @@ header h1 {
   position: relative;
 }
 
-.inner {
+
+.inner .caption{
   position: absolute;
   padding: 8px;
   color: #fff;
@@ -41,6 +42,25 @@ header h1 {
   padding: 8px 0 0 0;
 }
 
-main {
+.inner .buttons{
+  position: absolute;
+  right: 16px;
+  bottom: 32px;
+}
 
+.button {
+  display: inline-block;
+  width: 200px;
+  padding: 20px;
+  background-color: #afa58d;
+  color: #fff;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.button_contact {
+  background-color: #f1b400;
 }
