@@ -1,4 +1,39 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+header {
+  position: fixed;
+
+}
+
 main img {
   width: 100%;
+  max-width: 100%;
   height: auto;
+  margin: 56px 16px 0;
+
+}
+
+header nav {
+  display: flex;
+  margin: 16px;
+
+}
+
+header nav h1 {
+
+}
+
+.menu_lists {
+  margin: 0 0 0 560px;
+}
+
+header nav ul {
+  display: flex;
+}
+
+li {
+  margin: 0 24px;
 }
