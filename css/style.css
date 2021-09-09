@@ -61,6 +61,10 @@ header h1 {
   text-align: center;
 }
 
+.button:hover {
+  opacity: 0.9;
+}
+
 .button_contact {
   background-color: #f1b400;
 }
