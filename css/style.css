@@ -89,7 +89,7 @@ header h1 {
 
 .works {
   background-color: #f4f4f4;
-
+  
   
 }
 
@@ -106,11 +106,11 @@ header h1 {
   align-items: flex-end;
   width: 100%;
   padding: 16px;
-
+  
 }
 
-.work_box {
-
+.work_box a:hover {
+  opacity: 0.8;
 }
 
 .work_box img {
