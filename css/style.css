@@ -3,6 +3,10 @@
 	padding:0;
 }
 
+body {
+  margin: 0 16px;
+}
+
 header {
 }
 
@@ -112,8 +116,14 @@ header h1 {
 .work_box img {
   width: 300px;
   height: auto;
+  margin: 0 0 16px 0;
 }
 
 .work_text {
   text-align: center;
+  margin: 0 0 16px 0;
+}
+
+.work_text .button{
+  margin: 24px 0 0 0;
 }
