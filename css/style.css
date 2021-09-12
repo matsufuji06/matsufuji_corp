@@ -73,6 +73,35 @@ header h1 {
   background-color: #f1b400;
 }
 
+nav {
+  margin-bottom: 8px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+nav li {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 4px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+nav li:hover {
+  background: #f8f8f8;
+}
+
+#next,
+#prev {
+  width: 60px;
+}
+
 .about {
 }
 
