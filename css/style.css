@@ -164,9 +164,53 @@ header h1 {
 
 .service_icon::before {
   line-height: 142px;
-
+  
 }
 
 .contact {
   padding: 80px 150px;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 32px;
+}
+
+.contact_form {
+  width: 80%;
+  margin: 50px auto 0;
+}
+
+.contact_form input[type=text],
+.contact_form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid;
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.contact_form textarea {
+  height: 150px;
+}
+
+.contact_form input[type=submit] {
+  display: block;
+  width: 200px;
+  margin: 40px auto 0px;
+  padding: 15px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: transparent;
+  /* color: rgba(255, 255, 255, .6); */
+  cursor: pointer;
+  text-align: center;
+}
+
+.contact_form input[type=submit]:hover {
+  background-color: rgba(255, 255, 255, 0.05);
 }
