@@ -20,6 +20,7 @@
     } else {
       mainImage.src = images[target];
     }
+    return mainImage.src;
   });
   
   const prev = document.getElementById("prev");
@@ -30,6 +31,7 @@
     } else {
       mainImage.src = images[target];
     }
-
+    return mainImage.src;
+    
   });
 }
