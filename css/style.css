@@ -134,7 +134,7 @@ header h1 {
 
 .service_box:nth-child(2) {
   margin: 0 48px 0;
-
+  
 }
 
 .service h2 {
@@ -168,7 +168,9 @@ header h1 {
 }
 
 .contact {
-  padding: 80px 150px;
+  padding: 40px 150px;
+  margin-top: 32px;
+  background-color: #f4f4f4;
 }
 
 .contact h2 {
