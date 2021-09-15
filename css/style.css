@@ -208,7 +208,6 @@ header h1 {
   border: 1px solid;
   border-radius: 5px;
   background-color: transparent;
-  /* color: rgba(255, 255, 255, .6); */
   cursor: pointer;
   text-align: center;
 }
