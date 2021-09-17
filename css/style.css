@@ -232,6 +232,28 @@ header h1 {
   }
   .button{
     display: block;
-    width: ;
+
+  }
+
+  .works_wrapper{
+    display: block;
+ 
+  }
+
+  .work_box{
+    text-align: center;
+  }
+  .work_text .button{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .service_wrapper{
+    display: block;
+  }
+
+  .service_box{
+ 
+
   }
 }
