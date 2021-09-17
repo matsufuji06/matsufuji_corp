@@ -217,5 +217,21 @@ header h1 {
 }
 
 @media (max-width: 768px) {
-  
+  .img_unit{
+    margin-bottom: 100px;
+  }
+  .inner .caption{
+    font-size: small;
+    bottom: 0px;
+    left: 10px;
+  }
+  .inner .buttons{
+    top: 0px;
+    right: 0px;
+    
+  }
+  .button{
+    display: block;
+    width: ;
+  }
 }
