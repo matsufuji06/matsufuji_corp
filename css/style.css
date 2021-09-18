@@ -202,7 +202,7 @@ header h1 {
 
 .contact_form input[type=submit] {
   display: block;
-  width: 200px;
+  width: 100%;
   margin: 40px auto 0px;
   padding: 15px;
   border: 1px solid;
@@ -230,6 +230,7 @@ header h1 {
     right: 0px;
     
   }
+
   .button{
     display: block;
 
@@ -242,10 +243,13 @@ header h1 {
 
   .work_box{
     text-align: center;
+    padding-bottom: 40px;
   }
+
   .work_text .button{
     display: block;
-    margin: 0 auto;
+    margin: 32px auto;
+
   }
 
   .service_wrapper{
@@ -253,7 +257,7 @@ header h1 {
   }
 
   .service_box{
- 
+    padding-bottom: 40px;
 
   }
 }
