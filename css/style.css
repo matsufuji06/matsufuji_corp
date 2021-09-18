@@ -202,7 +202,7 @@ header h1 {
 
 .contact_form input[type=submit] {
   display: block;
-  width: 200px;
+  width: 100%;
   margin: 40px auto 0px;
   padding: 15px;
   border: 1px solid;
@@ -214,4 +214,50 @@ header h1 {
 
 .contact_form input[type=submit]:hover {
   background-color: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 1200px) {
+  .img_unit{
+    margin-bottom: 100px;
+  }
+  .inner .caption{
+    font-size: small;
+    bottom: 0px;
+    left: 10px;
+  }
+  .inner .buttons{
+    top: 0px;
+    right: 0px;
+    
+  }
+
+  .button{
+    display: block;
+
+  }
+
+  .works_wrapper{
+    display: block;
+ 
+  }
+
+  .work_box{
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .work_text .button{
+    display: block;
+    margin: 32px auto;
+
+  }
+
+  .service_wrapper{
+    display: block;
+  }
+
+  .service_box{
+    padding-bottom: 40px;
+
+  }
 }
