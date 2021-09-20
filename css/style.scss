@@ -1,10 +1,13 @@
 * {
-  margin: 0;
-  padding: 0;
+	margin:0;
+	padding:0;
 }
 
 body {
   margin: 0 16px;
+}
+
+header {
 }
 
 header img {
@@ -25,11 +28,12 @@ header h1 {
   position: relative;
 }
 
-.inner .caption {
+
+.inner .caption{
   position: absolute;
   padding: 8px;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, .5);
   font-weight: bold;
   font-size: 32px;
   bottom: 24px;
@@ -42,7 +46,7 @@ header h1 {
   padding: 8px 0 0 0;
 }
 
-.inner .buttons {
+.inner .buttons{
   position: absolute;
   right: 16px;
   bottom: 32px;
@@ -70,6 +74,9 @@ header h1 {
   background-color: #f1b400;
 }
 
+.about {
+}
+
 .about h2 {
   font-family: 'Pacifico', cursive;
   background-color: #188DC8;
@@ -86,6 +93,8 @@ header h1 {
 .works {
   padding: 40px;
   background-color: #f4f4f4;
+  
+  
 }
 
 .works h2 {
@@ -98,17 +107,12 @@ header h1 {
 }
 
 .works_wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: space-between;
+  align-items: flex-end;
   width: 100%;
   padding: 16px;
+  
 }
 
 .work_box a:hover {
@@ -127,7 +131,7 @@ header h1 {
   margin: 0 0 16px 0;
 }
 
-.work_text .button {
+.work_text .button{
   margin: 24px 0 0 0;
 }
 
@@ -138,6 +142,7 @@ header h1 {
 
 .service_box:nth-child(2) {
   margin: 0 48px 0;
+  
 }
 
 .service h2 {
@@ -150,12 +155,8 @@ header h1 {
 }
 
 .service_wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 80%;
   margin: 0 auto;
 }
@@ -173,12 +174,16 @@ header h1 {
 
 .service_icon::before {
   line-height: 142px;
+  
 }
 
 .service_box .service_title {
   font-weight: bold;
   font-size: 18px;
   margin-bottom: 24px;
+}
+.service_box .service_text {
+
 }
 
 .contact {
@@ -241,37 +246,45 @@ footer {
 }
 
 @media (max-width: 1200px) {
-  .img_unit {
+  .img_unit{
     margin-bottom: 100px;
   }
-  .inner .caption {
+
+  .inner .caption{
     font-size: small;
     bottom: 0px;
     left: 10px;
   }
-  .inner .buttons {
+
+  .inner .buttons{
     top: 0px;
     right: 0px;
   }
-  .button {
+
+  .button{
     display: block;
   }
-  .works_wrapper {
+
+  .works_wrapper{
     display: block;
   }
-  .work_box {
+
+  .work_box{
     text-align: center;
     padding-bottom: 80px;
   }
-  .work_text .button {
+
+  .work_text .button{
     display: block;
     margin: 32px auto;
+
   }
-  .service_wrapper {
+
+  .service_wrapper{
     display: block;
   }
-  .service_box {
+
+  .service_box{
     padding-bottom: 80px;
   }
 }
-/*# sourceMappingURL=style.css.map */
