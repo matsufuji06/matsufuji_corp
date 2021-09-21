@@ -7,25 +7,17 @@ body {
   margin: 0 16px;
 }
 
-header img {
+header .img_unit {
+  position: relative;
+}
+
+header .img_unit img {
   width: 100%;
   max-width: 100%;
   height: auto;
 }
 
-header h1 {
-  font-family: 'Pacifico', cursive;
-  font-weight: bold;
-  font-size: 36px;
-  margin: 16px 0;
-  text-align: center;
-}
-
-.img_unit {
-  position: relative;
-}
-
-.inner .caption {
+header .img_unit .inner .caption {
   position: absolute;
   padding: 8px;
   color: #fff;
@@ -37,15 +29,23 @@ header h1 {
   border-radius: 10px;
 }
 
-.inner p:nth-child(2) {
+header .img_unit .inner p:nth-child(2) {
   font-size: 16px;
   padding: 8px 0 0 0;
 }
 
-.inner .buttons {
+header .img_unit .inner .buttons {
   position: absolute;
   right: 16px;
   bottom: 32px;
+}
+
+header h1 {
+  font-family: 'Pacifico', cursive;
+  font-weight: bold;
+  font-size: 36px;
+  margin: 16px 0;
+  text-align: center;
 }
 
 .button {
@@ -111,33 +111,29 @@ header h1 {
   padding: 16px;
 }
 
-.work_box a:hover {
+.works_wrapper .work_box a:hover {
   opacity: 0.8;
 }
 
-.work_box img {
+.works_wrapper .work_box img {
   width: 300px;
   height: auto;
   margin: 0 0 16px 0;
   border-radius: 4px;
 }
 
-.work_text {
+.works_wrapper .work_box .work_text {
   text-align: center;
   margin: 0 0 16px 0;
 }
 
-.work_text .button {
+.works_wrapper .work_box .work_text .button {
   margin: 24px 0 0 0;
 }
 
 .service {
   padding: 40px;
   text-align: center;
-}
-
-.service_box:nth-child(2) {
-  margin: 0 48px 0;
 }
 
 .service h2 {
@@ -160,7 +156,11 @@ header h1 {
   margin: 0 auto;
 }
 
-.service_icon {
+.service_wrapper .service_box::nth-child(2) {
+  margin: 0 48px 0;
+}
+
+.service_wrapper .service_box .service_icon {
   width: 150px;
   height: 150px;
   margin-bottom: 32px;
@@ -171,11 +171,11 @@ header h1 {
   text-align: center;
 }
 
-.service_icon::before {
+.service_wrapper .service_box .service_icon::before {
   line-height: 142px;
 }
 
-.service_box .service_title {
+.service_wrapper .service_box .service_title {
   font-weight: bold;
   font-size: 18px;
   margin-bottom: 24px;
@@ -244,12 +244,12 @@ footer {
   .img_unit {
     margin-bottom: 100px;
   }
-  .inner .caption {
+  .img_unit .inner .caption {
     font-size: small;
     bottom: 0px;
     left: 10px;
   }
-  .inner .buttons {
+  .img_unit .inner .buttons {
     top: 0px;
     right: 0px;
   }
@@ -259,18 +259,18 @@ footer {
   .works_wrapper {
     display: block;
   }
-  .work_box {
+  .works_wrapper .work_box {
     text-align: center;
     padding-bottom: 80px;
   }
-  .work_text .button {
+  .works_wrapper .work_box .work_text .button {
     display: block;
     margin: 32px auto;
   }
   .service_wrapper {
     display: block;
   }
-  .service_box {
+  .service_wrapper .service_box {
     padding-bottom: 80px;
   }
 }
