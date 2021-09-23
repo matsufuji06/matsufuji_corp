@@ -60,6 +60,8 @@ header h1 {
   font-weight: bold;
   text-align: center;
   /* transition: all 1.0s; */
+  -webkit-box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .button:hover {
