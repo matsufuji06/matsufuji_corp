@@ -1,7 +1,8 @@
-# matsufuji_corp
-「まつふじ株式会社」のポートフォリオサイトです。
+# matsufuji_corp  
+「まつふじ株式会社（仮）」のポートフォリオサイトです。
 
-## 特徴
+## 特徴  
+アニメーションを駆使したポートフォリオサイトに仕上げました。実績として、過去に作成したwebアプリケーションをリンクとして貼っています。
 
 ## 使用技術  
-HTML/CSS(Sass), JavaScript, PHP
+HTML/CSS(Sass), JavaScript, PHP, Github
