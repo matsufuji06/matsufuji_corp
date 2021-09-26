@@ -12,12 +12,12 @@
           animation: sk-bouncedelay 1.4s infinite;
 }
 
-.three-dot-spiner .bounce1 {
+.three-dot-spiner div:nth-child(1) {
   -webkit-animation-delay: -0.32s;
           animation-delay: -0.32s;
 }
 
-.three-dot-spiner .bounce2 {
+.three-dot-spiner div:nth-child(2) {
   -webkit-animation-delay: -0.16s;
           animation-delay: -0.16s;
 }
