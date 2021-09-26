@@ -3,7 +3,9 @@
 }
 
 .three-dot-spiner div {
+  display: inline-block;
   width: 18px;
   height: 18px;
+  background-color: #000;
 }
 /*# sourceMappingURL=loader.css.map */
