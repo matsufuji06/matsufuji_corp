@@ -1,0 +1,32 @@
+.three-dot-spiner {
+  text-align: center;
+}
+
+.three-dot-spiner div {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: #000;
+  border-radius: 50%;
+  -webkit-animation: sk-bouncedelay 1.4s infinite;
+          animation: sk-bouncedelay 1.4s infinite;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes sk-bouncedelay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=loader.css.map */
