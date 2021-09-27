@@ -1,5 +1,5 @@
 $cBlack: #000;
-
+$cWhite: #fff;
 .mobile-menu-icon {
   background-color: transparent;
   border: none;
@@ -12,6 +12,15 @@ $cBlack: #000;
     margin-bottom: 9px;
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+}
+
+.menu-open {
+  background-color: $cBlack;
+  & .mobile-menu-icon {
+    & > span {
+      background-color: $cWhite;
     }
   }
 }
