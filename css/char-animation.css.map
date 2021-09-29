@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "char-animation.scss",
+        "_mixin.scss"
+    ],
+    "names": [],
+    "file": "char-animation.css"
+}
