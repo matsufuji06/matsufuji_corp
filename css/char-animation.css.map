@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAEA,AAAA,UAAU,CAAC;EACT,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,IAAI;CAQvB;;AAXD,AAIE,UAJQ,CAIR,cAAc,CAAC;EACb,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,GAAG;EACR,IAAI,EAAE,GAAG;EACT,SAAS,EAAE,qBAAqB;EAChC,KAAK,EAAE,IAAI;CACZ",
     "sources": [
         "char-animation.scss",
         "_mixin.scss"

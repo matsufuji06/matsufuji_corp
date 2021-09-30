@@ -1,1 +1,15 @@
-/* No CSS *//*# sourceMappingURL=char-animation.css.map */
+#container {
+  position: relative;
+  height: 100vh;
+  background-color: teal;
+}
+
+#container .animate-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+}
+/*# sourceMappingURL=char-animation.css.map */
