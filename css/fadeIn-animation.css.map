@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEI,OAFG,CACL,KAAK,CACH,GAAG,CAAC;EACF,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "fadeIn-animation.scss"
+    ],
+    "names": [],
+    "file": "fadeIn-animation.css"
+}
