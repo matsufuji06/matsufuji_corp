@@ -15,6 +15,28 @@
       color: #fff;
     }
 
-    
+    &.inview {
+      & .char {
+        display: inline-block;
+        @include animation(
+          $name: kf-animate-chars,
+          $duration: 0.5s,
+          $timing-function: ease,
+          $fill-mode: both)
+      }
+    }
   }
+}
+
+@keyframes kf-animate-chars {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
 }
