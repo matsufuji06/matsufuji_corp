@@ -1,5 +1,10 @@
-.appear .item img {
-  width: 200px;
-  height: auto;
+.appear.up .item {
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  opacity: 0;
+}
+
+.item img {
+  max-width: 50%;
 }
 /*# sourceMappingURL=fadeIn-animation.css.map */
