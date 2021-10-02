@@ -2,10 +2,12 @@
   & .item {
     transition: all 0.8s;
     opacity: 0;
+    transform: translateY(16px);
   }
   &.inview {
     & .item {
       opacity: 1;
+      transform: none;
     }
   }
 }
@@ -13,5 +15,6 @@
 .item {
   img {
     max-width: 50%;
+    margin-bottom: 8px;
   }
 }

@@ -2,13 +2,18 @@
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
   opacity: 0;
+  -webkit-transform: translateY(16px);
+          transform: translateY(16px);
 }
 
 .appear.up.inview .item {
   opacity: 1;
+  -webkit-transform: none;
+          transform: none;
 }
 
 .item img {
   max-width: 50%;
+  margin-bottom: 8px;
 }
 /*# sourceMappingURL=fadeIn-animation.css.map */
