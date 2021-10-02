@@ -10,6 +10,11 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+#container .animate-title span {
+  font-size: 24px;
+  font-weight: bold;
   color: #fff;
 }
 /*# sourceMappingURL=char-animation.css.map */
