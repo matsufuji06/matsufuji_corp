@@ -4,6 +4,7 @@
   img {
     max-width: 100%;
     margin-bottom: 8px;
+    vertical-align: bottom;
   }
 }
 
@@ -25,6 +26,7 @@ $pattern: (
 
 .appear {
   position: relative;
+  overflow: hidden;
   & .item {
     transition: all 0.8s;
     opacity: 0;
@@ -33,12 +35,16 @@ $pattern: (
     & .item {
       opacity: 1;
       transform: none;
+      @include animation($name: kf-cover-show);
       @for $i from 1 through 6 {
         &:nth-child(#{$i}) {
           transition-delay: $i * 0.5s;
 
         }
       } 
+    }
+    &::after {
+
     }
   }
   &::after {
@@ -69,5 +75,24 @@ $pattern: (
   100% {
     left: 100%;
     right: 0;
+  }
+}
+
+@keyframes kf-cover-show {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  50.1% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+
+  100% {
+    opacity: 1;
   }
 }
