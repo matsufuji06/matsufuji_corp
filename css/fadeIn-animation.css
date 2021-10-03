@@ -1,5 +1,5 @@
 .item img {
-  max-width: 50%;
+  max-width: 100%;
   margin-bottom: 8px;
 }
 
@@ -21,6 +21,10 @@
 .appear.right .item {
   -webkit-transform: translateX(-32px);
           transform: translateX(-32px);
+}
+
+.appear {
+  position: relative;
 }
 
 .appear .item {
@@ -63,5 +67,46 @@
 .appear.inview .item:nth-child(6) {
   -webkit-transition-delay: 3s;
           transition-delay: 3s;
+}
+
+.appear::after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: tomato;
+}
+
+@-webkit-keyframes kf-cover-slide {
+  0% {
+    left: 0;
+    right: 100%;
+  }
+  50% {
+    left: 0;
+    right: 0;
+  }
+  100% {
+    left: 100%;
+    right: 0;
+  }
+}
+
+@keyframes kf-cover-slide {
+  0% {
+    left: 0;
+    right: 100%;
+  }
+  50% {
+    left: 0;
+    right: 0;
+  }
+  100% {
+    left: 100%;
+    right: 0;
+  }
 }
 /*# sourceMappingURL=fadeIn-animation.css.map */
