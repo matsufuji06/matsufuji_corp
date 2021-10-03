@@ -35,8 +35,14 @@ $pattern: (
     & .item {
       opacity: 1;
       transform: none;
+      transition: 0.3s ease;
+
       @include animation($name: kf-cover-show, $duration: 1.6s, $timing-function: ease-in-out, $fill-mode: none);
 
+      &:hover {
+        transform: scale(1.3);
+      }
+      
       @for $i from 1 through 6 {
         &:nth-child(#{$i}) {
           transition-delay: $i * 0.5s;
