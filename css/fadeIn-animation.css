@@ -1,5 +1,9 @@
+.item {
+  text-align: center;
+}
+
 .item img {
-  max-width: 100%;
+  max-width: 80%;
   margin-bottom: 8px;
   vertical-align: bottom;
 }
@@ -92,7 +96,7 @@
           transition-delay: 3s;
 }
 
-.appear::after {
+.appear.inview::after {
   content: '';
   position: absolute;
   z-index: 2;
