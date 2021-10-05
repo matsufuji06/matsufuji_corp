@@ -60,8 +60,8 @@ header h1 {
   font-weight: bold;
   text-align: center;
   /* transition: all 1.0s; */
-  -webkit-box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.5);
-          box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 0px black;
+          box-shadow: 5px 5px 0px black;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -90,7 +90,6 @@ header h1 {
 }
 
 .button:hover::before {
-  opacity: 0.9;
   -webkit-transform: none;
           transform: none;
 }
@@ -110,6 +109,12 @@ header h1 {
   font-weight: bold;
   color: #fff;
   text-align: center;
+}
+
+.about .about_text {
+  margin: 48px 192px;
+  text-align: center;
+  font-size: 18px;
 }
 
 .works {
@@ -138,10 +143,6 @@ header h1 {
           align-items: flex-end;
   width: 100%;
   padding: 16px;
-}
-
-.works_wrapper .work_box a:hover {
-  opacity: 0.8;
 }
 
 .works_wrapper .work_box img {
