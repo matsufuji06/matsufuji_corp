@@ -271,7 +271,7 @@ footer {
 }
 
 @media (max-width: 600px) {
-  .img_unit{
+  .img_unit {
     margin-bottom: 100px;
   }
   .img_unit .inner .caption {
