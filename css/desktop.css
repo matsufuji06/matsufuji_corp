@@ -269,39 +269,4 @@ footer {
   margin: 32px auto;
   font-weight: bold;
 }
-
-@media screen and (max-width: 600px) {
-  .img_unit {
-    margin-bottom: 100px;
-  }
-  .img_unit .inner .caption {
-    font-size: small;
-    bottom: 0px;
-    left: 10px;
-  }
-  .img_unit .inner .buttons {
-    top: 0px;
-    right: 0px;
-  }
-  .button {
-    display: block;
-  }
-  .works_wrapper {
-    display: block;
-  }
-  .works_wrapper .work_box {
-    text-align: center;
-    padding-bottom: 80px;
-  }
-  .works_wrapper .work_box .work_text .button {
-    display: block;
-    margin: 32px auto;
-  }
-  .service_wrapper {
-    display: block;
-  }
-  .service_wrapper .service_box {
-    padding-bottom: 80px;
-  }
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=desktop.css.map */
