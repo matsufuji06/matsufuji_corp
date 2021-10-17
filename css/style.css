@@ -270,8 +270,8 @@ footer {
   font-weight: bold;
 }
 
-@media (max-width: 1200px) {
-  .img_unit {
+@media (max-width: 600px) {
+  .img_unit{
     margin-bottom: 100px;
   }
   .img_unit .inner .caption {
