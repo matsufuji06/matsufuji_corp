@@ -2,9 +2,10 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
   <title>まつふじ株式会社のポートフォリオサイト</title>
-  <link rel="stylesheet" href="css/destyle.css">
+  <!-- スタイルシートの読み込み -->
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <!-- Font Awesomeの導入 -->
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
@@ -25,7 +26,7 @@
           <p>未来に向けてタネをまこう！ともに育てよう！</p>
         </div>
         <div class="buttons">
-          <a class="button button_about" href="#about">LEARN MORE</a>
+          <a class="button button_about" href="#about">MORE</a>
           <a class="button button_contact" href="#contact">SEND MESSAGE</a>
         </div>
       </div>
@@ -41,6 +42,16 @@
   <main>
     <section class="about" id="about">
       <h2>About Us</h2>
+      <p class="about_text">
+        はじめまして！「まつふじ」と申します。webデザイナーを目指し転職活動中です。<br>
+        現在は、公立学校の英語科教員として勤務しています。
+      </p>
+      <p class="about_text">
+        現職の「先生」というバックグラウンドや、過去に広告会社で勤務した経験、そしてブログ運営という経験を生かし、「クライアントに寄り添い、共に育てていけるデザイナー」を目指していきたいと思っています。<br><br>
+        【学習した言語】<br>
+        HTML(haml) / CSS(scss)  / Ruby / Ruby on Rails / JavaScript / jQuery / SQL / AWS(EC2)/ Heroku / Photoshop
+        
+      </p>
     </section>
     <section class="works">
       <h2>Works</h2>
@@ -117,14 +128,21 @@
     </section>
     <section class="contact" id="contact">
       <h2>Contact</h2>
+      <form class="contact_form">
+        <input type="text" name="name" placeholder="NAME">
+        <textarea name="message" placeholder="MESSAGE"></textarea>
+        <input type="submit" value="SEND">
+      </form>
     </section>
   </main>
 
   
   <footer class="footer">
-
+    <p class="copy_right">&copy; Matsufuji Corporation</p>
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="lib/placeholders.min.js"></script>
+
 </body>
 </html>

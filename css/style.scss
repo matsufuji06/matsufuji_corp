@@ -188,3 +188,9 @@ nav {
     line-height: 142px;
   }
 }
+
+@import "desktop.scss";
+
+@media screen and (max-width: 600px) {
+  @import "mobile.scss";
+}
