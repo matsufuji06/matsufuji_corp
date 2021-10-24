@@ -1,13 +1,10 @@
 * {
-	margin:0;
-	padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   margin: 0 16px;
-}
-
-header {
 }
 
 header img {
@@ -28,12 +25,11 @@ header h1 {
   position: relative;
 }
 
-
-.inner .caption{
+.inner .caption {
   position: absolute;
   padding: 8px;
   color: #fff;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.5);
   font-weight: bold;
   font-size: 32px;
   bottom: 24px;
@@ -46,7 +42,7 @@ header h1 {
   padding: 8px 0 0 0;
 }
 
-.inner .buttons{
+.inner .buttons {
   position: absolute;
   right: 16px;
   bottom: 32px;
@@ -78,8 +74,12 @@ nav {
 }
 
 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 10px;
 }
 
@@ -90,19 +90,18 @@ nav li {
   padding: 4px;
   text-align: center;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 nav li:hover {
   background: #f8f8f8;
 }
 
-#next,
-#prev {
+#next, #prev {
   width: 60px;
-}
-
-.about {
 }
 
 .about h2 {
@@ -118,8 +117,6 @@ nav li:hover {
 
 .works {
   background-color: #f4f4f4;
-  
-  
 }
 
 .works h2 {
@@ -130,12 +127,17 @@ nav li:hover {
 }
 
 .works_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   width: 100%;
   padding: 16px;
-  
 }
 
 .work_box a:hover {
@@ -153,7 +155,7 @@ nav li:hover {
   margin: 0 0 16px 0;
 }
 
-.work_text .button{
+.work_text .button {
   margin: 24px 0 0 0;
 }
 
@@ -163,7 +165,6 @@ nav li:hover {
 
 .service_box:nth-child(2) {
   margin: 0 48px 0;
-
 }
 
 .service h2 {
@@ -174,8 +175,12 @@ nav li:hover {
 }
 
 .service_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 80%;
   margin: 0 auto;
 }
@@ -193,5 +198,5 @@ nav li:hover {
 
 .service_icon::before {
   line-height: 142px;
-
 }
+/*# sourceMappingURL=style.css.map */
