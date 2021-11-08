@@ -186,6 +186,11 @@ nav li:hover {
   margin: 0 auto;
 }
 
+.service_wrapper .service_text {
+  margin: 0 auto;
+  width: 300px;
+}
+
 .service_icon {
   width: 150px;
   height: 150px;
