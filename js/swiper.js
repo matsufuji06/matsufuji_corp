@@ -1,7 +1,14 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  direction: 'vertical',
+
+  // ↓コメントアウトすると、横のスライドになる。
+  // direction: 'vertical',
+
   loop: true,
+
+  // ↓スライド時のエフェクト指定
+  // effect: 'fade',
+  effect: 'coverflow',
 
   // If we need pagination
   pagination: {
