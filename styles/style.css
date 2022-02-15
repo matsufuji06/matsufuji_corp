@@ -30,7 +30,7 @@ header h1 {
   position: relative;
 }
 
-.inner .caption {
+.swiper-inner .caption {
   position: absolute;
   padding: 8px;
   color: #fff;
@@ -42,12 +42,12 @@ header h1 {
   border-radius: 10px;
 }
 
-.inner p:nth-child(2) {
+.swiper-inner p:nth-child(2) {
   font-size: 16px;
   padding: 8px 0 0 0;
 }
 
-.inner .buttons {
+.swiper-inner .buttons {
   position: absolute;
   right: 16px;
   bottom: 32px;
