@@ -26,6 +26,10 @@ header h1 {
   text-align: center;
 }
 
+header .hero {
+  position: relative;
+}
+
 .img_unit {
   position: relative;
 }
@@ -37,9 +41,10 @@ header h1 {
   background-color: rgba(0, 0, 0, 0.5);
   font-weight: bold;
   font-size: 32px;
-  bottom: 24px;
-  left: 24px;
+  bottom: 2%;
+  left: 2%;
   border-radius: 10px;
+  z-index: 2;
 }
 
 .swiper-inner p:nth-child(2) {
@@ -49,8 +54,8 @@ header h1 {
 
 .swiper-inner .buttons {
   position: absolute;
-  right: 16px;
-  bottom: 32px;
+  right: 2%;
+  bottom: 2%;
 }
 
 .button {
@@ -68,6 +73,7 @@ header h1 {
 
 .button:hover {
   opacity: 0.9;
+  text-decoration: none;
 }
 
 .button_contact {

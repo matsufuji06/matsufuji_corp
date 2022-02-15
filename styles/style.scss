@@ -31,6 +31,10 @@ header {
     margin: 16px 0;
     text-align: center;
   }
+
+  .hero {
+    position: relative;
+  }
 }
 
 .img_unit {
@@ -45,9 +49,10 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
     font-weight: bold;
     font-size: 32px;
-    bottom: 24px;
-    left: 24px;
+    bottom: 2%;
+    left: 2%;
     border-radius: 10px;
+    z-index: 2;
   }
 
   p:nth-child(2) {
@@ -57,8 +62,8 @@ header {
 
   .buttons {
     position: absolute;
-    right: 16px;
-    bottom: 32px;
+    right: 2%;
+    bottom: 2%;
   }
 }
 
@@ -76,6 +81,7 @@ header {
 
   &:hover {
     opacity: 0.9;
+    text-decoration: none;
   }
 }
 
