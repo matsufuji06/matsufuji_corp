@@ -1,21 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  margin: 0 16px;
-}
-
 img {
   max-width: 100%;
   vertical-align: bottom;
-}
-
-header img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
 }
 
 header h1 {
@@ -30,11 +15,13 @@ header .hero {
   position: relative;
 }
 
-.img_unit {
-  position: relative;
+header .hero .swiper img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
-.swiper-inner .caption {
+header .hero .swiper .swiper-inner .caption {
   position: absolute;
   padding: 8px;
   color: #fff;
@@ -47,18 +34,18 @@ header .hero {
   z-index: 2;
 }
 
-.swiper-inner p:nth-child(2) {
+header .hero .swiper .swiper-inner p:nth-child(2) {
   font-size: 16px;
   padding: 8px 0 0 0;
 }
 
-.swiper-inner .buttons {
+header .hero .swiper .swiper-inner .buttons {
   position: absolute;
   right: 2%;
   bottom: 2%;
 }
 
-.button {
+header .hero .swiper .swiper-inner .buttons .button {
   display: inline-block;
   width: 200px;
   padding: 20px;
@@ -71,49 +58,13 @@ header .hero {
   text-align: center;
 }
 
-.button:hover {
+header .hero .swiper .swiper-inner .buttons .button:hover {
   opacity: 0.9;
   text-decoration: none;
 }
 
-.button_contact {
+header .hero .swiper .swiper-inner .buttons .button_contact {
   background-color: #f1b400;
-}
-
-nav {
-  margin-bottom: 8px;
-}
-
-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 10px;
-}
-
-nav li {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 12px;
-  padding: 4px;
-  text-align: center;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  list-style: none;
-}
-
-nav li:hover {
-  background: #f8f8f8;
-}
-
-#next, #prev {
-  width: 60px;
 }
 
 .about h2 {

@@ -1,29 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  margin: 0 16px;
-}
-
 img {
   max-width: 100%;
   vertical-align: bottom;
 }
 
 header {
-  // .swiper {
-  //   width: 600px;
-  //   height: 300px;
-  // }
-
-  img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-
   h1 {
     font-family: 'Pacifico', cursive;
     font-weight: bold;
@@ -31,90 +11,60 @@ header {
     margin: 16px 0;
     text-align: center;
   }
-
   .hero {
     position: relative;
-  }
-}
-
-.img_unit {
-  position: relative;
-}
-
-.swiper-inner {
-  .caption {
-    position: absolute;
-    padding: 8px;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    font-weight: bold;
-    font-size: 32px;
-    bottom: 2%;
-    left: 2%;
-    border-radius: 10px;
-    z-index: 2;
-  }
-
-  p:nth-child(2) {
-    font-size: 16px;
-    padding: 8px 0 0 0;
-  }
-
-  .buttons {
-    position: absolute;
-    right: 2%;
-    bottom: 2%;
-  }
-}
-
-.button {
-  display: inline-block;
-  width: 200px;
-  padding: 20px;
-  background-color: #afa58d;
-  color: #fff;
-  border-radius: 4px;
-  letter-spacing: 1px;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-
-  &:hover {
-    opacity: 0.9;
-    text-decoration: none;
-  }
-}
-
-.button_contact {
-  background-color: #f1b400;
-}
-
-nav {
-  margin-bottom: 8px;
-
-  ul {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-  }
-
-  li {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 12px;
-    padding: 4px;
-    text-align: center;
-    cursor: pointer;
-    user-select: none;
-    list-style: none;
-    &:hover {
-      background: #f8f8f8;
+    .swiper {
+      img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+      .swiper-inner {
+        .caption {
+          position: absolute;
+          padding: 8px;
+          color: #fff;
+          background-color: rgba(0, 0, 0, 0.5);
+          font-weight: bold;
+          font-size: 32px;
+          bottom: 2%;
+          left: 2%;
+          border-radius: 10px;
+          z-index: 2;
+        }
+      
+        p:nth-child(2) {
+          font-size: 16px;
+          padding: 8px 0 0 0;
+        }
+      
+        .buttons {
+          position: absolute;
+          right: 2%;
+          bottom: 2%;
+          .button {
+            display: inline-block;
+            width: 200px;
+            padding: 20px;
+            background-color: #afa58d;
+            color: #fff;
+            border-radius: 4px;
+            letter-spacing: 1px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            &:hover {
+              opacity: 0.9;
+              text-decoration: none;
+            }
+          }
+          .button_contact {
+            background-color: #f1b400;
+          }
+        }
+      }
     }
   }
-}
-
-#next, #prev {
-  width: 60px;
 }
 
 .about h2 {
