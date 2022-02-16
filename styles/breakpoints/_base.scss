@@ -1,0 +1,229 @@
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+body {
+  font-family: 'Kameron', serif;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+.font-sm {
+  font-size: 14px;
+}
+.font-md {
+  font-size: 17px;
+}
+.font-lr {
+  font-size: 17px;
+}
+.font-lg {
+  font-size: 25px;
+}
+.mb-sm {
+  margin-bottom: 16px !important;
+}
+.mb-lg {
+  margin-bottom: 80px !important;
+}
+.pb-sm {
+  padding-bottom: 16px !important;
+}
+.pb-lg {
+  padding-bottom: 80px !important;
+}
+.content-width {
+  width: 90%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+.main-title {
+  @extend .font-lg;
+  font-weight: 600;
+  margin-bottom: 0;
+  display: block;
+}
+.sub-title {
+  @extend .font-sm;
+  color: $cSubTitle;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+.purple {
+  color: $cWineRed;
+}
+
+// ------------------------------
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+header {
+  h1 {
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 16px 0;
+    text-align: center;
+  }
+  .hero {
+    position: relative;
+    .swiper {
+      img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+      .swiper-inner {
+        .caption {
+          position: absolute;
+          padding: 8px;
+          color: #fff;
+          background-color: rgba(0, 0, 0, 0.5);
+          font-weight: bold;
+          font-size: 32px;
+          bottom: 2%;
+          left: 2%;
+          border-radius: 10px;
+          z-index: 2;
+        }
+      
+        p:nth-child(2) {
+          font-size: 16px;
+          padding: 8px 0 0 0;
+        }
+      
+        .buttons {
+          position: absolute;
+          right: 2%;
+          bottom: 2%;
+          .button {
+            display: inline-block;
+            width: 200px;
+            padding: 20px;
+            background-color: #afa58d;
+            color: #fff;
+            border-radius: 4px;
+            letter-spacing: 1px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            &:hover {
+              opacity: 0.9;
+              text-decoration: none;
+            }
+          }
+          .button_contact {
+            background-color: #f1b400;
+          }
+        }
+      }
+    }
+  }
+}
+
+.about h2 {
+  background-color: #188DC8;
+  margin: 30px 0 15px;
+  padding: 16px;
+  letter-spacing: 2px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+.works {
+  background-color: #f4f4f4;
+
+  h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 16px;
+  }
+}
+
+.works_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  padding: 16px;
+}
+
+.work_box {
+  a:hover {
+    opacity: 0.8;
+  }
+
+  img {
+    width: 300px;
+    height: auto;
+    margin: 0 0 16px 0;
+  }
+}
+
+.work_text {
+  text-align: center;
+  margin: 0 0 16px 0;
+
+  .button {
+    margin: 24px 0 0 0;
+  }
+}
+
+.service {
+  text-align: center;
+}
+
+.service_box:nth-child(2) {
+  margin: 0 48px 0;
+}
+
+.service h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 32px;
+}
+
+.service_wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  .service_text {
+    margin: 0 auto;
+    width: 300px;
+  }
+}
+
+.service_icon {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 32px;
+  border: 4px solid;
+  border-radius: 50%;
+  color: #f1b400;
+  font-size: 5.6rem;
+  text-align: center;
+
+  &::before {
+    line-height: 142px;
+  }
+}
+
+@import "desktop.scss";
+
+@media screen and (max-width: 600px) {
+  @import "mobile.scss";
+}
