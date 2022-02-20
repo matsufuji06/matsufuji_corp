@@ -4,76 +4,15 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
 
-img {
-  max-width: 100%;
-  vertical-align: bottom;
-}
-
 .buttons {
-  position: absolute;
-  right: 2%;
-  bottom: 2%;
-  z-index: 2;
-}
-.button {
-  display: inline-block;
-  width: 200px;
-  padding: 20px;
-  background-color: #afa58d;
-  color: #fff;
-  color: #fff;
-  border-radius: 4px;
-  letter-spacing: 1px;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  &:hover {
-    opacity: 0.9;
-    color: #fff;
-    text-decoration: none;
-  }
-}
-.button_contact {
-  background-color: #f1b400;
+  opacity: 1;
 }
 
-header {
-  h1 {
-    font-family: 'Pacifico', cursive;
-    font-weight: bold;
-    font-size: 36px;
-    margin: 16px 0;
-    text-align: center;
-  }
-  .hero {
-    position: relative;
-    .swiper {
-      img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-      }
-      .swiper-inner {
-        .caption {
-          position: absolute;
-          padding: 8px;
-          color: #fff;
-          background-color: rgba(0, 0, 0, 0.5);
-          font-weight: bold;
-          font-size: 32px;
-          top: 2%;
-          right: 2%;
-          border-radius: 10px;
-          z-index: 2;
-        }
-        
-        p:nth-child(2) {
-          font-size: 16px;
-          // padding: 8px 0 0 0;
-        }
-        
-      }
-    }
+// ↓opacityが0のまま表示されない
+.caption {
+  opacity: 1;
+  p {
+    opacity: 1;
   }
 }
 

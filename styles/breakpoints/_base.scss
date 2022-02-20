@@ -3,52 +3,53 @@
 Stylesheet: ベーススタイル
 
 ******************************************************************/
-.font-sm {
-  font-size: 14px;
-}
-.font-md {
-  font-size: 17px;
-}
-.font-lr {
-  font-size: 17px;
-}
-.font-lg {
-  font-size: 25px;
-}
-.mb-sm {
-  margin-bottom: 16px !important;
-}
-.mb-lg {
-  margin-bottom: 80px !important;
-}
-.pb-sm {
-  padding-bottom: 16px !important;
-}
-.pb-lg {
-  padding-bottom: 80px !important;
-}
-.content-width {
-  width: 90%;
-  margin: 0 auto;
-  // max-width: $contentMaxWidth;
-}
-.main-title {
-  @extend .font-lg;
-  font-weight: 600;
-  margin-bottom: 0;
-  display: block;
-}
-.sub-title {
-  @extend .font-sm;
-  // color: $cSubTitle;
-}
-.flex {
-  display: flex;
-  flex-direction: column;
-}
-.purple {
-  // color: $cWineRed;
-}
+
+// .font-sm {
+//   font-size: 14px;
+// }
+// .font-md {
+//   font-size: 17px;
+// }
+// .font-lr {
+//   font-size: 17px;
+// }
+// .font-lg {
+//   font-size: 25px;
+// }
+// .mb-sm {
+//   margin-bottom: 16px !important;
+// }
+// .mb-lg {
+//   margin-bottom: 80px !important;
+// }
+// .pb-sm {
+//   padding-bottom: 16px !important;
+// }
+// .pb-lg {
+//   padding-bottom: 80px !important;
+// }
+// .content-width {
+//   width: 90%;
+//   margin: 0 auto;
+//   max-width: $contentMaxWidth;
+// }
+// .main-title {
+//   @extend .font-lg;
+//   font-weight: 600;
+//   margin-bottom: 0;
+//   display: block;
+// }
+// .sub-title {
+//   @extend .font-sm;
+//   color: $cSubTitle;
+// }
+// .flex {
+//   display: flex;
+//   flex-direction: column;
+// }
+// .purple {
+//   color: $cWineRed;
+// }
 
 
 
@@ -58,6 +59,7 @@ img {
 }
 
 .buttons {
+  opacity: 0;
   position: absolute;
   right: 2%;
   bottom: 2%;
@@ -65,10 +67,9 @@ img {
 }
 .button {
   display: inline-block;
-  width: 200px;
+  width: 180px;
   padding: 20px;
   background-color: #afa58d;
-  color: #fff;
   color: #fff;
   border-radius: 4px;
   letter-spacing: 1px;
@@ -104,20 +105,26 @@ header {
       .swiper-inner {
         .caption {
           position: absolute;
-          padding: 8px;
+          padding: 4px;
           color: #fff;
           background-color: rgba(0, 0, 0, 0.5);
           font-weight: bold;
-          font-size: 32px;
-          top: 2%;
-          right: 2%;
+          font-size: 20px;
+          bottom: 2%;
+          left: 2%;
           border-radius: 10px;
           z-index: 2;
         }
         
+        p {
+          opacity: 0;
+          margin: 0 auto;
+          padding: 0 8px;
+        }
+        
         p:nth-child(2) {
-          font-size: 16px;
-          // padding: 8px 0 0 0;
+          font-size: 12px;
+          padding: 0px;
         }
         
       }

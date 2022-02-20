@@ -4,12 +4,66 @@
 Stylesheet: ベーススタイル
 
 ******************************************************************/
+.font-sm, .sub-title {
+  font-size: 14px;
+}
+
+.font-md {
+  font-size: 17px;
+}
+
+.font-lr {
+  font-size: 17px;
+}
+
+.font-lg, .main-title {
+  font-size: 25px;
+}
+
+.mb-sm {
+  margin-bottom: 16px !important;
+}
+
+.mb-lg {
+  margin-bottom: 80px !important;
+}
+
+.pb-sm {
+  padding-bottom: 16px !important;
+}
+
+.pb-lg {
+  padding-bottom: 80px !important;
+}
+
+.content-width {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main-title {
+  font-weight: 600;
+  margin-bottom: 0;
+  display: block;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 img {
   max-width: 100%;
   vertical-align: bottom;
 }
 
 .buttons {
+  opacity: 0;
   position: absolute;
   right: 2%;
   bottom: 2%;
@@ -18,10 +72,9 @@ img {
 
 .button {
   display: inline-block;
-  width: 200px;
+  width: 180px;
   padding: 20px;
   background-color: #afa58d;
-  color: #fff;
   color: #fff;
   border-radius: 4px;
   letter-spacing: 1px;
@@ -59,20 +112,27 @@ header .hero .swiper img {
 }
 
 header .hero .swiper .swiper-inner .caption {
+  visibility: hidden;
   position: absolute;
-  padding: 8px;
+  padding: 4px;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.5);
   font-weight: bold;
-  font-size: 32px;
-  top: 2%;
-  right: 2%;
+  font-size: 20px;
+  bottom: 2%;
+  left: 2%;
   border-radius: 10px;
   z-index: 2;
 }
 
+header .hero .swiper .swiper-inner p {
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
 header .hero .swiper .swiper-inner p:nth-child(2) {
-  font-size: 16px;
+  font-size: 12px;
+  padding: 0px;
 }
 
 .about h2 {
@@ -240,115 +300,11 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
-  body {
-    width: 100%;
-  }
-  img {
-    max-width: 100%;
-    vertical-align: bottom;
-  }
-  .font-sm, .sub-title {
-    font-size: 14px;
-  }
-  .font-md {
-    font-size: 17px;
-  }
-  .font-lr {
-    font-size: 17px;
-  }
-  .font-lg, .main-title {
-    font-size: 25px;
-  }
-  .mb-sm {
-    margin-bottom: 16px !important;
-  }
-  .mb-lg {
-    margin-bottom: 80px !important;
-  }
-  .pb-sm {
-    padding-bottom: 16px !important;
-  }
-  .pb-lg {
-    padding-bottom: 80px !important;
-  }
-  .content-width {
-    width: 90%;
-    margin: 0 auto;
-  }
-  .main-title {
-    font-weight: 600;
-    margin-bottom: 0;
-    display: block;
-  }
-  .flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  img {
-    max-width: 100%;
-    vertical-align: bottom;
-  }
   .buttons {
-    position: absolute;
-    right: 2%;
-    bottom: 2%;
-    z-index: 2;
+    opacity: 1;
   }
-  .button {
-    display: inline-block;
-    width: 200px;
-    padding: 20px;
-    background-color: #afa58d;
-    color: #fff;
-    color: #fff;
-    border-radius: 4px;
-    letter-spacing: 1px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-  }
-  .button:hover {
-    opacity: 0.9;
-    color: #fff;
-    text-decoration: none;
-  }
-  .button_contact {
-    background-color: #f1b400;
-  }
-  header h1 {
-    font-family: 'Pacifico', cursive;
-    font-weight: bold;
-    font-size: 36px;
-    margin: 16px 0;
-    text-align: center;
-  }
-  header .hero {
-    position: relative;
-  }
-  header .hero .swiper img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-  header .hero .swiper .swiper-inner .caption {
-    position: absolute;
-    padding: 8px;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    font-weight: bold;
-    font-size: 32px;
-    top: 2%;
-    right: 2%;
-    border-radius: 10px;
-    z-index: 2;
-  }
-  header .hero .swiper .swiper-inner p:nth-child(2) {
-    font-size: 16px;
+  .caption {
+    visibility: visible;
   }
   .about h2 {
     background-color: #188DC8;
