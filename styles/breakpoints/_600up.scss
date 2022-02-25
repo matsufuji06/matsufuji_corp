@@ -16,17 +16,6 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   }
 }
 
-.about h2 {
-  background-color: #188DC8;
-  margin: 30px 0 15px;
-  padding: 16px;
-  letter-spacing: 2px;
-  font-size: 32px;
-  font-weight: bold;
-  color: #fff;
-  text-align: center;
-}
-
 .works_wrapper {
   display: flex;
   flex-direction: row;
@@ -37,19 +26,9 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 
 .service_wrapper {
   display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin: 0 auto;
-  .service_text {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
 
-  }
-}
-
-.contact {
-  .contact_form {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    margin: 0 auto;
-  }
 }

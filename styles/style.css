@@ -272,16 +272,6 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   .caption p {
     opacity: 1;
   }
-  .about h2 {
-    background-color: #188DC8;
-    margin: 30px 0 15px;
-    padding: 16px;
-    letter-spacing: 2px;
-    font-size: 32px;
-    font-weight: bold;
-    color: #fff;
-    text-align: center;
-  }
   .works_wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -302,22 +292,17 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
-  }
-  .contact .contact_form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 60%;
-    margin: 0 auto;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
