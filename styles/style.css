@@ -4,59 +4,6 @@
 Stylesheet: ベーススタイル
 
 ******************************************************************/
-.font-sm, .sub-title {
-  font-size: 14px;
-}
-
-.font-md {
-  font-size: 17px;
-}
-
-.font-lr {
-  font-size: 17px;
-}
-
-.font-lg, .main-title {
-  font-size: 25px;
-}
-
-.mb-sm {
-  margin-bottom: 16px !important;
-}
-
-.mb-lg {
-  margin-bottom: 80px !important;
-}
-
-.pb-sm {
-  padding-bottom: 16px !important;
-}
-
-.pb-lg {
-  padding-bottom: 80px !important;
-}
-
-.content-width {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.main-title {
-  font-weight: 600;
-  margin-bottom: 0;
-  display: block;
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 img {
   max-width: 100%;
   vertical-align: bottom;
@@ -112,7 +59,6 @@ header .hero .swiper img {
 }
 
 header .hero .swiper .swiper-inner .caption {
-  visibility: hidden;
   position: absolute;
   padding: 4px;
   color: #fff;
@@ -126,6 +72,7 @@ header .hero .swiper .swiper-inner .caption {
 }
 
 header .hero .swiper .swiper-inner p {
+  opacity: 1;
   margin: 0 auto;
   padding: 0 8px;
 }
@@ -158,17 +105,23 @@ header .hero .swiper .swiper-inner p:nth-child(2) {
 }
 
 .works_wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   padding: 16px;
+}
+
+.work_box {
+  text-align: center;
+  margin: 32px 0px;
 }
 
 .work_box a:hover {
@@ -178,7 +131,6 @@ header .hero .swiper .swiper-inner p:nth-child(2) {
 .work_box img {
   width: 300px;
   height: auto;
-  margin: 0 0 16px 0;
 }
 
 .work_text {
@@ -304,7 +256,10 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     opacity: 1;
   }
   .caption {
-    visibility: visible;
+    opacity: 1;
+  }
+  .caption p {
+    opacity: 1;
   }
   .about h2 {
     background-color: #188DC8;
@@ -332,9 +287,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    margin: 0 auto;
     width: 100%;
     padding: 16px;
   }
@@ -344,7 +297,6 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   .work_box img {
     width: 300px;
     height: auto;
-    margin: 0 0 16px 0;
   }
   .work_text {
     text-align: center;
@@ -443,7 +395,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
-  .font-sm, .sub-title {
+  .font-sm {
     font-size: 16px;
   }
   .font-md {
@@ -452,7 +404,7 @@ Stylesheet: 960px以上のモニタで適用
   .font-lr {
     font-size: 23px;
   }
-  .font-lg, .main-title {
+  .font-lg {
     font-size: 36px;
   }
   .mb-lg {

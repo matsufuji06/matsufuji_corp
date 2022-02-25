@@ -117,7 +117,7 @@ header {
         }
         
         p {
-          opacity: 0;
+          opacity: 1;
           margin: 0 auto;
           padding: 0 8px;
         }
@@ -155,14 +155,16 @@ header {
 }
 
 .works_wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   padding: 16px;
 }
 
 .work_box {
+  text-align: center;
+  margin: 32px 0px;
   a:hover {
     opacity: 0.8;
   }
@@ -170,7 +172,6 @@ header {
   img {
     width: 300px;
     height: auto;
-    margin: 0 0 16px 0;
   }
 }
 
