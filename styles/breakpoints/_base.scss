@@ -201,12 +201,18 @@ header {
 
 .service_wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 80%;
   margin: 0 auto;
-  .service_text {
-    margin: 0 auto;
-    width: 300px;
+  .service_box {
+    margin: 32px auto;
+
+    .service_text {
+      margin: 0 auto;
+      width: 300px;
+    }
   }
 }
 
