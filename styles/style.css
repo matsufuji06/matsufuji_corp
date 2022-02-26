@@ -93,6 +93,11 @@ header .hero .swiper .swiper-inner p:nth-child(2) {
   text-align: center;
 }
 
+.about .about_text {
+  padding: 32px;
+  font-size: large;
+}
+
 .works {
   background-color: #f4f4f4;
 }
@@ -104,7 +109,7 @@ header .hero .swiper .swiper-inner p:nth-child(2) {
   padding: 16px;
 }
 
-.works_wrapper {
+.works .works_wrapper {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -119,26 +124,33 @@ header .hero .swiper .swiper-inner p:nth-child(2) {
   padding: 16px;
 }
 
-.work_box {
+.works .works_wrapper .work_box {
   text-align: center;
   margin: 32px 0px;
+  padding: 32px;
 }
 
-.work_box a:hover {
+.works .works_wrapper .work_box .work_title {
+  font-size: large;
+  font-weight: bold;
+}
+
+.works .works_wrapper .work_box a:hover {
   opacity: 0.8;
 }
 
-.work_box img {
+.works .works_wrapper .work_box img {
   width: 300px;
   height: auto;
 }
 
-.work_text {
+.works .works_wrapper .work_box .work_text {
   text-align: center;
   margin: 0 0 16px 0;
+  font-size: large;
 }
 
-.work_text .button {
+.works .works_wrapper .work_box .work_text .button {
   margin: 24px 0 0 0;
 }
 
