@@ -1,0 +1,34 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+
+.buttons {
+  opacity: 1;
+}
+
+// ↓opacityが0のまま表示されない
+.caption {
+  opacity: 1;
+  p {
+    opacity: 1;
+  }
+}
+
+.works_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}

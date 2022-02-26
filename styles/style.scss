@@ -1,166 +1,34 @@
-img {
-  max-width: 100%;
-  vertical-align: bottom;
+// ※モバイルファーストで
+@import 'breakpoints/base';
+
+// ※↓よりデスクトップサイズ。小さい順に並べる。
+// スマホ横
+@media screen and (min-width: 480px) {
+  @import 'breakpoints/480up';
 }
 
-header {
-  h1 {
-    font-family: 'Pacifico', cursive;
-    font-weight: bold;
-    font-size: 36px;
-    margin: 16px 0;
-    text-align: center;
-  }
-  .hero {
-    position: relative;
-    .swiper {
-      img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-      }
-      .swiper-inner {
-        .caption {
-          position: absolute;
-          padding: 8px;
-          color: #fff;
-          background-color: rgba(0, 0, 0, 0.5);
-          font-weight: bold;
-          font-size: 32px;
-          bottom: 2%;
-          left: 2%;
-          border-radius: 10px;
-          z-index: 2;
-        }
-      
-        p:nth-child(2) {
-          font-size: 16px;
-          padding: 8px 0 0 0;
-        }
-      
-        .buttons {
-          position: absolute;
-          right: 2%;
-          bottom: 2%;
-          .button {
-            display: inline-block;
-            width: 200px;
-            padding: 20px;
-            background-color: #afa58d;
-            color: #fff;
-            border-radius: 4px;
-            letter-spacing: 1px;
-            font-size: 16px;
-            font-weight: bold;
-            text-align: center;
-            &:hover {
-              opacity: 0.9;
-              text-decoration: none;
-            }
-          }
-          .button_contact {
-            background-color: #f1b400;
-          }
-        }
-      }
-    }
-  }
+// タブレット
+@media screen and (min-width: 600px) {
+  @import 'breakpoints/600up';
 }
 
-.about h2 {
-  background-color: #188DC8;
-  margin: 30px 0 15px;
-  padding: 16px;
-  letter-spacing: 2px;
-  font-size: 32px;
-  font-weight: bold;
-  color: #fff;
-  text-align: center;
+// タブレット横or小さいデスクトップ
+@media screen and (min-width: 960px) {
+  @import 'breakpoints/960up';
 }
 
-.works {
-  background-color: #f4f4f4;
-
-  h2 {
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    padding: 16px;
-  }
+// 通常PC
+@media screen and (min-width: 1280px) {
+  @import 'breakpoints/1280up';
 }
 
-.works_wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  width: 100%;
-  padding: 16px;
-}
-
-.work_box {
-  a:hover {
-    opacity: 0.8;
+// 高解像のレディナディスプレイ
+@media screen and (min-resolution: 192dpi),
+  (-webkit-min-devise-pixel-ratio: 2) {
+    @import 'breakpoints/2x';
   }
 
-  img {
-    width: 300px;
-    height: auto;
-    margin: 0 0 16px 0;
-  }
-}
-
-.work_text {
-  text-align: center;
-  margin: 0 0 16px 0;
-
-  .button {
-    margin: 24px 0 0 0;
-  }
-}
-
-.service {
-  text-align: center;
-}
-
-.service_box:nth-child(2) {
-  margin: 0 48px 0;
-}
-
-.service h2 {
-  text-align: center;
-  font-size: 32px;
-  font-weight: bold;
-  padding: 32px;
-}
-
-.service_wrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin: 0 auto;
-  .service_text {
-    margin: 0 auto;
-    width: 300px;
-  }
-}
-
-.service_icon {
-  width: 150px;
-  height: 150px;
-  margin-bottom: 32px;
-  border: 4px solid;
-  border-radius: 50%;
-  color: #f1b400;
-  font-size: 5.6rem;
-  text-align: center;
-
-  &::before {
-    line-height: 142px;
-  }
-}
-
-@import "desktop.scss";
-
-@media screen and (max-width: 600px) {
-  @import "mobile.scss";
+// プリント時
+@media print {
+  @import 'breakpoints/print';
 }
