@@ -136,6 +136,7 @@ header .hero .swiper .swiper-inner p:nth-child(2) {
 
 .works .works_wrapper .work_box .cover-slide {
   position: relative;
+  overflow: hidden;
 }
 
 .works .works_wrapper .work_box .cover-slide::after {
@@ -146,13 +147,16 @@ header .hero .swiper .swiper-inner p:nth-child(2) {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: olivedrab;
+  background-color: #eaebe6;
+}
+
+.works .works_wrapper .work_box .cover-slide.inview::after {
   -webkit-animation-name: kf-cover-slide;
           animation-name: kf-cover-slide;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
   -webkit-animation-iteration-count: 1;
@@ -163,9 +167,27 @@ header .hero .swiper .swiper-inner p:nth-child(2) {
           animation-fill-mode: forwards;
 }
 
-.works .works_wrapper .work_box .cover-slide img {
-  max-width: 80%;
+.works .works_wrapper .work_box .cover-slide.inview .work_image {
+  opacity: 1;
+}
+
+.works .works_wrapper .work_box .cover-slide .work_image {
+  opacity: 0;
   height: auto;
+  -webkit-animation-name: kf-img-show;
+          animation-name: kf-img-show;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
 }
 
 .works .works_wrapper .work_box a:hover {
@@ -317,6 +339,40 @@ header .hero .swiper .swiper-inner p:nth-child(2) {
   100% {
     left: 100%;
     right: 0;
+  }
+}
+
+@-webkit-keyframes kf-img-show {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  50.1% {
+    opacity: 1;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes kf-img-show {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  50.1% {
+    opacity: 1;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
   }
 }
 
