@@ -201,7 +201,7 @@ header {
 
         .work_image {
           opacity: 0;
-          // max-width: 100%;
+          max-width: 100%;
           // width: 300px;
           height: auto;
           @include animation(
@@ -223,7 +223,7 @@ header {
         // margin: 0 0 16px 0;
         font-size: large;
         margin: 0 auto;
-        width: 300px;
+        // width: 300px;
         // font-weight: bold;
         .button {
           margin: 24px 0 0 0;

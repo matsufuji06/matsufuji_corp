@@ -173,6 +173,7 @@ header .hero .swiper .swiper-inner p:nth-child(2) {
 
 .works .works_wrapper .work_box .cover-slide .work_image {
   opacity: 0;
+  max-width: 100%;
   height: auto;
   -webkit-animation-name: kf-img-show;
           animation-name: kf-img-show;
@@ -198,7 +199,6 @@ header .hero .swiper .swiper-inner p:nth-child(2) {
   text-align: center;
   font-size: large;
   margin: 0 auto;
-  width: 300px;
 }
 
 .works .works_wrapper .work_box .work_text .button {
