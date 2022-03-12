@@ -63,14 +63,24 @@ img {
           transform: translateY(-11px) rotate(-135deg);
 }
 
-header .mobile-menu__btn {
+#container .header {
+  position: relative;
+}
+
+#container .header .mobile-menu__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   background-color: transparent;
   border: none;
   outline: none !important;
   cursor: pointer;
 }
 
-header .mobile-menu__btn > span {
+#container .header .mobile-menu__btn > span {
   background-color: #000000;
   display: block;
   width: 35px;
@@ -82,11 +92,11 @@ header .mobile-menu__btn > span {
   transition: transform 0.7s, -webkit-transform 0.7s;
 }
 
-header .mobile-menu__btn > span:last-child {
+#container .header .mobile-menu__btn > span:last-child {
   margin-bottom: 0;
 }
 
-header h1 {
+#container .header h1 {
   font-family: 'Pacifico', cursive;
   font-weight: bold;
   font-size: 36px;
@@ -98,17 +108,17 @@ header h1 {
           user-select: none;
 }
 
-header .hero {
+#container .hero {
   position: relative;
 }
 
-header .hero .swiper img {
+#container .hero .swiper img {
   width: 100%;
   max-width: 100%;
   height: auto;
 }
 
-header .hero .swiper .swiper-inner .caption {
+#container .hero .swiper .swiper-inner .caption {
   position: absolute;
   padding: 4px;
   color: #fff;
@@ -121,13 +131,13 @@ header .hero .swiper .swiper-inner .caption {
   z-index: 2;
 }
 
-header .hero .swiper .swiper-inner p {
+#container .hero .swiper .swiper-inner p {
   opacity: 1;
   margin: 0 auto;
   padding: 0 8px;
 }
 
-header .hero .swiper .swiper-inner p:nth-child(2) {
+#container .hero .swiper .swiper-inner p:nth-child(2) {
   font-size: 12px;
   padding: 0px;
 }

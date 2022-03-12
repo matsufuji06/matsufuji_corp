@@ -58,34 +58,40 @@ img {
   }
 }
 
-header {
-  .mobile-menu__btn {
-    // ↓背景色透明
-    background-color: transparent;
-    border: none;
-    outline: none !important;
-    cursor: pointer;
-    & > span {
-      background-color: $cBlack;
-      display: block;
-      width: 35px;
-      height: 2px;
-      margin-bottom: 9px;
-      transition: transform 0.7s;
-      &:last-child {
-        margin-bottom: 0;
+#container {
+  .header {
+    position: relative;
+    // background-color: teal;
+    // height: 100vh;
+    .mobile-menu__btn {
+      display: flex;
+      justify-content: flex-end;
+      // ↓背景色透明
+      background-color: transparent;
+      border: none;
+      outline: none !important;
+      cursor: pointer;
+      & > span {
+        background-color: $cBlack;
+        display: block;
+        width: 35px;
+        height: 2px;
+        margin-bottom: 9px;
+        transition: transform 0.7s;
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
-  }
-
-
-  h1 {
-    font-family: 'Pacifico', cursive;
-    font-weight: bold;
-    font-size: 36px;
-    margin: 16px 0;
-    text-align: center;
-    user-select: none;
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-weight: bold;
+      font-size: 36px;
+      margin: 16px 0;
+      text-align: center;
+      user-select: none;
+    }
+    
   }
   .hero {
     position: relative;
@@ -123,6 +129,8 @@ header {
       }
     }
   }
+
+
 }
 
 .about {
