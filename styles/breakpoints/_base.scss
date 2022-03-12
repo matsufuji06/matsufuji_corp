@@ -42,7 +42,7 @@ img {
 
 .menu-open {
   background-color: $cBlack;
-  .mobile-menu-icon{
+  .mobile-menu__btn{
     & > span {
       background-color: $cWhite;
       &:nth-child(1) {
@@ -59,7 +59,7 @@ img {
 }
 
 header {
-  .mobile-menu-icon {
+  .mobile-menu__btn {
     // ↓背景色透明
     background-color: transparent;
     border: none;
