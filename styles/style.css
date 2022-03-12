@@ -7,6 +7,7 @@ Stylesheet: ベーススタイル
 img {
   max-width: 100%;
   vertical-align: bottom;
+  z-index: -1;
 }
 
 .buttons {
@@ -38,6 +39,11 @@ img {
 
 .button_contact {
   background-color: #f1b400;
+}
+
+.menu-open {
+  background-color: #000000;
+  z-index: 10;
 }
 
 header .mobile-menu-icon {
