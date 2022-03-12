@@ -4,59 +4,12 @@ Stylesheet: ベーススタイル
 
 ******************************************************************/
 
-// .font-sm {
-//   font-size: 14px;
-// }
-// .font-md {
-//   font-size: 17px;
-// }
-// .font-lr {
-//   font-size: 17px;
-// }
-// .font-lg {
-//   font-size: 25px;
-// }
-// .mb-sm {
-//   margin-bottom: 16px !important;
-// }
-// .mb-lg {
-//   margin-bottom: 80px !important;
-// }
-// .pb-sm {
-//   padding-bottom: 16px !important;
-// }
-// .pb-lg {
-//   padding-bottom: 80px !important;
-// }
-// .content-width {
-//   width: 90%;
-//   margin: 0 auto;
-//   max-width: $contentMaxWidth;
-// }
-// .main-title {
-//   @extend .font-lg;
-//   font-weight: 600;
-//   margin-bottom: 0;
-//   display: block;
-// }
-// .sub-title {
-//   @extend .font-sm;
-//   color: $cSubTitle;
-// }
-// .flex {
-//   display: flex;
-//   flex-direction: column;
-// }
-// .purple {
-//   color: $cWineRed;
-// }
-
 $cBlack: #000000;
+$cWhite: #ffffff;
 
 img {
   max-width: 100%;
   vertical-align: bottom;
-  z-index: -1;
 }
 
 .buttons {
@@ -89,7 +42,20 @@ img {
 
 .menu-open {
   background-color: $cBlack;
-  z-index: 10;
+  .mobile-menu-icon{
+    & > span {
+      background-color: $cWhite;
+      &:nth-child(1) {
+        transform: translateY(11px) rotate(135deg);
+      }
+      &:nth-child(2) {
+        transform: translateX(-18px) scaleX(0);
+      }
+      &:nth-child(3) {
+        transform: translateY(-11px) rotate(-135deg);
+      }
+    }
+  }
 }
 
 header {
@@ -97,12 +63,15 @@ header {
     // ↓背景色透明
     background-color: transparent;
     border: none;
+    outline: none !important;
+    cursor: pointer;
     & > span {
       background-color: $cBlack;
       display: block;
       width: 35px;
       height: 2px;
       margin-bottom: 9px;
+      transition: transform 0.7s;
       &:last-child {
         margin-bottom: 0;
       }

@@ -7,7 +7,6 @@ Stylesheet: ベーススタイル
 img {
   max-width: 100%;
   vertical-align: bottom;
-  z-index: -1;
 }
 
 .buttons {
@@ -43,12 +42,32 @@ img {
 
 .menu-open {
   background-color: #000000;
-  z-index: 10;
+}
+
+.menu-open .mobile-menu-icon > span {
+  background-color: #ffffff;
+}
+
+.menu-open .mobile-menu-icon > span:nth-child(1) {
+  -webkit-transform: translateY(11px) rotate(135deg);
+          transform: translateY(11px) rotate(135deg);
+}
+
+.menu-open .mobile-menu-icon > span:nth-child(2) {
+  -webkit-transform: translateX(-18px) scaleX(0);
+          transform: translateX(-18px) scaleX(0);
+}
+
+.menu-open .mobile-menu-icon > span:nth-child(3) {
+  -webkit-transform: translateY(-11px) rotate(-135deg);
+          transform: translateY(-11px) rotate(-135deg);
 }
 
 header .mobile-menu-icon {
   background-color: transparent;
   border: none;
+  outline: none !important;
+  cursor: pointer;
 }
 
 header .mobile-menu-icon > span {
@@ -57,6 +76,10 @@ header .mobile-menu-icon > span {
   width: 35px;
   height: 2px;
   margin-bottom: 9px;
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
 }
 
 header .mobile-menu-icon > span:last-child {
