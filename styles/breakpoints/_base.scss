@@ -51,6 +51,8 @@ Stylesheet: ベーススタイル
 //   color: $cWineRed;
 // }
 
+$cBlack: #000000;
+
 img {
   max-width: 100%;
   vertical-align: bottom;
@@ -85,6 +87,22 @@ img {
 }
 
 header {
+  .mobile-menu-icon {
+    // ↓背景色透明
+    background-color: transparent;
+    border: none;
+    & > span {
+      background-color: $cBlack;
+      display: block;
+      width: 35px;
+      height: 2px;
+      margin-bottom: 9px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
   h1 {
     font-family: 'Pacifico', cursive;
     font-weight: bold;

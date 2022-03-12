@@ -40,6 +40,23 @@ img {
   background-color: #f1b400;
 }
 
+header .mobile-menu-icon {
+  background-color: transparent;
+  border: none;
+}
+
+header .mobile-menu-icon > span {
+  background-color: #000000;
+  display: block;
+  width: 35px;
+  height: 2px;
+  margin-bottom: 9px;
+}
+
+header .mobile-menu-icon > span:last-child {
+  margin-bottom: 0;
+}
+
 header h1 {
   font-family: 'Pacifico', cursive;
   font-weight: bold;
