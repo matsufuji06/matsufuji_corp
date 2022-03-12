@@ -61,11 +61,10 @@ img {
 #container {
   .header {
     position: relative;
-    // background-color: teal;
-    // height: 100vh;
     .mobile-menu__btn {
-      display: flex;
-      justify-content: flex-end;
+      position: absolute;
+      top: 20px;
+      right: 20px;
       // ↓背景色透明
       background-color: transparent;
       border: none;

@@ -68,12 +68,9 @@ img {
 }
 
 #container .header .mobile-menu__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  position: absolute;
+  top: 20px;
+  right: 20px;
   background-color: transparent;
   border: none;
   outline: none !important;
