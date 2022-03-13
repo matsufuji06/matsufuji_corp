@@ -41,7 +41,11 @@ img {
 }
 
 .menu-open {
-  background-color: $cBlack;
+  #container {
+    transform: translate(-300px, 60px);
+    box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
+    
+  }
   .mobile-menu__btn{
     & > span {
       background-color: $cWhite;
@@ -56,9 +60,15 @@ img {
       }
     }
   }
+  .mobile-menu {
+    position: fixed;
+    right: 0px;
+    top: 60px;
+  } 
 }
 
 #container {
+  transition: all 0.5s;
   .header {
     position: relative;
     .mobile-menu__btn {
@@ -128,8 +138,6 @@ img {
       }
     }
   }
-
-
 }
 
 .about {

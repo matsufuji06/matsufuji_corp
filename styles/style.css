@@ -40,8 +40,11 @@ img {
   background-color: #f1b400;
 }
 
-.menu-open {
-  background-color: #000000;
+.menu-open #container {
+  -webkit-transform: translate(-300px, 60px);
+          transform: translate(-300px, 60px);
+  -webkit-box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
 }
 
 .menu-open .mobile-menu__btn > span {
@@ -61,6 +64,17 @@ img {
 .menu-open .mobile-menu__btn > span:nth-child(3) {
   -webkit-transform: translateY(-11px) rotate(-135deg);
           transform: translateY(-11px) rotate(-135deg);
+}
+
+.menu-open .mobile-menu {
+  position: fixed;
+  right: 0px;
+  top: 60px;
+}
+
+#container {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 #container .header {
