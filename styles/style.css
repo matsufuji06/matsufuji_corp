@@ -47,6 +47,20 @@ img {
   width: 300px;
 }
 
+.mobile-menu__cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  z-index: 2;
+}
+
 .mobile-menu__main {
   padding: 0;
   -webkit-perspective: 2000px;
@@ -110,6 +124,11 @@ img {
 .menu-open .mobile-menu__btn > span:nth-child(3) {
   -webkit-transform: translateY(-11px) rotate(-135deg);
           transform: translateY(-11px) rotate(-135deg);
+}
+
+.menu-open .mobile-menu__cover {
+  opacity: 1;
+  visibility: visible;
 }
 
 .menu-open .mobile-menu__item {

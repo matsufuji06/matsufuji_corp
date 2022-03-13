@@ -45,6 +45,18 @@ img {
   right: 0px;
   top: 60px;
   width: 300px;
+  &__cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s;
+    z-index: 2;
+  }
 
   &__main {
     padding: 0;
@@ -100,6 +112,10 @@ img {
     }
   }
   .mobile-menu {
+    &__cover {
+      opacity: 1;
+      visibility: visible;
+    }
     &__item {
       transform: none;
       opacity: 1;
