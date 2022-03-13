@@ -4,52 +4,8 @@ Stylesheet: ベーススタイル
 
 ******************************************************************/
 
-// .font-sm {
-//   font-size: 14px;
-// }
-// .font-md {
-//   font-size: 17px;
-// }
-// .font-lr {
-//   font-size: 17px;
-// }
-// .font-lg {
-//   font-size: 25px;
-// }
-// .mb-sm {
-//   margin-bottom: 16px !important;
-// }
-// .mb-lg {
-//   margin-bottom: 80px !important;
-// }
-// .pb-sm {
-//   padding-bottom: 16px !important;
-// }
-// .pb-lg {
-//   padding-bottom: 80px !important;
-// }
-// .content-width {
-//   width: 90%;
-//   margin: 0 auto;
-//   max-width: $contentMaxWidth;
-// }
-// .main-title {
-//   @extend .font-lg;
-//   font-weight: 600;
-//   margin-bottom: 0;
-//   display: block;
-// }
-// .sub-title {
-//   @extend .font-sm;
-//   color: $cSubTitle;
-// }
-// .flex {
-//   display: flex;
-//   flex-direction: column;
-// }
-// .purple {
-//   color: $cWineRed;
-// }
+$cBlack: #000000;
+$cWhite: #ffffff;
 
 img {
   max-width: 100%;
@@ -84,14 +40,142 @@ img {
   background-color: #f1b400;
 }
 
-header {
-  h1 {
-    font-family: 'Pacifico', cursive;
-    font-weight: bold;
-    font-size: 36px;
-    margin: 16px 0;
-    text-align: center;
-    user-select: none;
+.mobile-menu {
+  position: fixed;
+  right: 0px;
+  top: 60px;
+  width: 300px;
+  &__cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  &__main {
+    padding: 0;
+    perspective: 2000px;
+    transform-style: preserve-3d;
+  }
+  &__item {
+    list-style: none;
+    display: block;
+    transform: translate3d(0, 0, -1000px);
+    padding: 0 40px;
+    transition: transition 0.3s, opacity 0.2s;
+    opacity: 0;
+
+  }
+  &__link {
+    display: block;
+    margin-top: 30px;
+    color: $cBlack;
+    text-decoration: none;
+    .main-title {
+      font-weight: 600;
+      font-size: 24px;
+    }
+    .sub-title {
+      // 下に折り返す
+      display: block;
+      font-size: 16px;
+      color: #535353;
+
+    }
+  }
+}
+
+.menu-open {
+  #container {
+    transform: translate(-300px, 60px);
+    box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
+    
+  }
+  .mobile-menu__btn{
+    & > span {
+      background-color: $cWhite;
+      &:nth-child(1) {
+        transform: translateY(11px) rotate(135deg);
+      }
+      &:nth-child(2) {
+        transform: translateX(-18px) scaleX(0);
+      }
+      &:nth-child(3) {
+        transform: translateY(-11px) rotate(-135deg);
+      }
+    }
+  }
+  .mobile-menu {
+    &__cover {
+      opacity: 1;
+      visibility: visible;
+    }
+    &__item {
+      transform: none;
+      opacity: 1;
+      @for $i from 1 through 4 {
+        &:nth-child(#{$i}) {
+          transition-delay: $i * 0.07s;
+
+        }
+      }
+    }
+
+      .main-title {
+        font-weight: 600;
+        font-size: 24px;
+      }
+      .sub-title {
+        // 下に折り返す
+        display: block;
+        font-size: 16px;
+        color: #535353;
+
+      }
+    }
+}
+
+#container {
+  transition: all 0.5s;
+  .header {
+    position: relative;
+    .mobile-menu__btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      // ↓背景色透明
+      background-color: transparent;
+      border: none;
+      outline: none !important;
+      cursor: pointer;
+      & > span {
+        background-color: $cBlack;
+        display: block;
+        width: 35px;
+        height: 2px;
+        margin-bottom: 9px;
+        transition: transform 0.7s;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-weight: bold;
+      font-size: 36px;
+      margin: 16px 0;
+      text-align: center;
+      user-select: none;
+    }
+    
   }
   .hero {
     position: relative;
@@ -145,7 +229,6 @@ header {
   .about_text {
     padding: 32px;
     font-size: large;
-    // font-weight: bold;
   }
 }
 
@@ -164,7 +247,6 @@ header {
     align-items: center;
     padding: 16px;
     .work_box {
-      // width: 100%;
       text-align: center;
       margin: 32px 0px;
       padding: 32px;
@@ -203,7 +285,6 @@ header {
         .work_image {
           opacity: 0;
           max-width: 100%;
-          // width: 300px;
           height: auto;
           @include animation(
             $name: kf-img-show,
@@ -221,11 +302,8 @@ header {
       
       .work_text {
         text-align: center;
-        // margin: 0 0 16px 0;
         font-size: large;
         margin: 0 auto;
-        // width: 300px;
-        // font-weight: bold;
         .button {
           margin: 24px 0 0 0;
         }
