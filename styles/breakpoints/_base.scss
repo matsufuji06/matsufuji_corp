@@ -40,6 +40,42 @@ img {
   background-color: #f1b400;
 }
 
+.mobile-menu {
+  position: fixed;
+  right: 0px;
+  top: 60px;
+  &__main {
+    padding: 0;
+    perspective: 2000px;
+    transform-style: preserve-3d;
+  }
+  &__item {
+    list-style: none;
+    display: block;
+    transform: translate3d(0, 0, -1000px);
+    padding: 0 40px;
+    transition: transition 0.3s, opacity 0.2s;
+    opacity: 0;
+
+  }
+  &__link {
+    display: block;
+    margin-top: 30px;
+    color: $cBlack;
+    .main-title {
+      font-weight: 600;
+      font-size: 24px;
+    }
+    .sub-title {
+      // 下に折り返す
+      display: block;
+      font-size: 16px;
+      color: #535353;
+
+    }
+  }
+}
+
 .menu-open {
   #container {
     transform: translate(-300px, 60px);
@@ -61,10 +97,24 @@ img {
     }
   }
   .mobile-menu {
-    position: fixed;
-    right: 0px;
-    top: 60px;
-  } 
+    &__item {
+      transform: none;
+      opacity: 1;
+      
+    }
+
+      .main-title {
+        font-weight: 600;
+        font-size: 24px;
+      }
+      .sub-title {
+        // 下に折り返す
+        display: block;
+        font-size: 16px;
+        color: #535353;
+
+      }
+    }
 }
 
 #container {
