@@ -44,6 +44,8 @@ img {
   position: fixed;
   right: 0px;
   top: 60px;
+  width: 300px;
+
   &__main {
     padding: 0;
     perspective: 2000px;
@@ -62,6 +64,7 @@ img {
     display: block;
     margin-top: 30px;
     color: $cBlack;
+    text-decoration: none;
     .main-title {
       font-weight: 600;
       font-size: 24px;
@@ -100,7 +103,12 @@ img {
     &__item {
       transform: none;
       opacity: 1;
-      
+      @for $i from 1 through 4 {
+        &:nth-child(#{$i}) {
+          transition-delay: $i * 0.07s;
+
+        }
+      }
     }
 
       .main-title {
